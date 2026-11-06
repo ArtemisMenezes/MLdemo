@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projeto ML — Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="banner">Demonstração com dados 100% fictícios. Não representa o produto real nem usa dados de clientes.</div>
+  <header>
+    <h1>Projeto <span>ML</span></h1>
+    <nav aria-label="Seções da demo">
+      <button data-tab="search">Busca + ICP</button>
+      <button data-tab="crm">CRM</button>
+      <button data-tab="copilot">Copilot</button>
+      <button data-tab="metrics">Métricas</button>
+      <button data-tab="lookalike" hidden>Similares (ML)</button>
+    </nav>
+    <span id="mode" class="badge">Modo estático · 40 empresas</span>
+    <button id="reset" class="ghost">Reiniciar demo</button>
+  </header>
+  <main id="view"></main>
+  <script src="data.js"></script>
+  <script src="scoring.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

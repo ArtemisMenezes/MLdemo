@@ -1,0 +1,270 @@
+{
+  "note": "Rótulos de cliente SIMULADOS. Mede se o pipeline funciona, não o desempenho em dados reais.",
+  "n_candidates": 8694,
+  "n_customers": 505,
+  "prevalence": 0.058086036346905914,
+  "validation": "StratifiedKFold(5), métricas sobre predições out-of-fold",
+  "metrics": {
+    "logistic": {
+      "auc": 0.7491687109851539,
+      "average_precision": 0.16862901019850393,
+      "precision@100": 0.24,
+      "lift@100": 4.13180198019802,
+      "recall@100": 0.047524752475247525,
+      "precision@500": 0.23,
+      "lift@500": 3.9596435643564356,
+      "recall@500": 0.22772277227722773,
+      "auc_folds_mean": 0.7497759971543819,
+      "auc_folds_std": 0.015780566915326266
+    },
+    "boosting": {
+      "auc": 0.731670473189705,
+      "average_precision": 0.14492045754194677,
+      "precision@100": 0.24,
+      "lift@100": 4.13180198019802,
+      "recall@100": 0.047524752475247525,
+      "precision@500": 0.186,
+      "lift@500": 3.202146534653465,
+      "recall@500": 0.18415841584158416
+    },
+    "icp_rules_baseline": {
+      "auc": 0.7346411329373259,
+      "average_precision": 0.15259136221730696,
+      "precision@100": 0.24,
+      "lift@100": 4.13180198019802,
+      "recall@100": 0.047524752475247525,
+      "precision@500": 0.228,
+      "lift@500": 3.925211881188119,
+      "recall@500": 0.22574257425742575
+    },
+    "random": {
+      "auc": 0.5,
+      "precision@100": 0.058086036346905914,
+      "precision@500": 0.058086036346905914
+    }
+  },
+  "coefficients": [
+    {
+      "feature": "CNAE 6204-0/00 · Consultoria em tecnologia da informação",
+      "coef": 0.972542539068532,
+      "odds_ratio": 2.644660069936057
+    },
+    {
+      "feature": "CNAE 6201-5/00 · Desenvolvimento de software sob encomenda",
+      "coef": 0.878911372399991,
+      "odds_ratio": 2.408276562528428
+    },
+    {
+      "feature": "Porte Médio",
+      "coef": 0.6398328221941262,
+      "odds_ratio": 1.8961638562930117
+    },
+    {
+      "feature": "CNAE 5611-2/01 · Restaurantes e similares",
+      "coef": -0.5464405287533907,
+      "odds_ratio": 0.579007105911284
+    },
+    {
+      "feature": "Porte MEI",
+      "coef": -0.5292041607720378,
+      "odds_ratio": 0.5890735910519009
+    },
+    {
+      "feature": "CNAE 8630-5/04 · Atividade odontológica",
+      "coef": -0.517598655326173,
+      "odds_ratio": 0.5959499122328089
+    },
+    {
+      "feature": "Porte desconhecido",
+      "coef": -0.5122997920961454,
+      "odds_ratio": 0.5991161506333427
+    },
+    {
+      "feature": "CNAE 7311-4/00 · Agências de publicidade",
+      "coef": -0.4348434348239883,
+      "odds_ratio": 0.6473660141180634
+    },
+    {
+      "feature": "Está no Nordeste",
+      "coef": 0.37531715655857256,
+      "odds_ratio": 1.455452947873295
+    },
+    {
+      "feature": "CNAE 4120-4/00 · Construção de edifícios",
+      "coef": -0.3464680472057722,
+      "odds_ratio": 0.7071814153485121
+    },
+    {
+      "feature": "CNAE 8599-6/04 · Treinamento em desenvolvimento profissional",
+      "coef": -0.2836415025352777,
+      "odds_ratio": 0.7530365580185792
+    },
+    {
+      "feature": "Regime Presumido",
+      "coef": -0.27002252972491797,
+      "odds_ratio": 0.7633622958005776
+    },
+    {
+      "feature": "Porte EPP",
+      "coef": 0.2514179487628108,
+      "odds_ratio": 1.2858473903661447
+    },
+    {
+      "feature": "Possui site",
+      "coef": 0.24613381124780526,
+      "odds_ratio": 1.2790707161396384
+    },
+    {
+      "feature": "Regime Real",
+      "coef": 0.22287363784396577,
+      "odds_ratio": 1.2496626536913995
+    },
+    {
+      "feature": "Regime MEI",
+      "coef": -0.14853943129917216,
+      "odds_ratio": 0.8619660180604514
+    },
+    {
+      "feature": "Possui site: dado ausente",
+      "coef": 0.13761662116496529,
+      "odds_ratio": 1.1475355250986254
+    },
+    {
+      "feature": "Capital social (log): dado ausente",
+      "coef": -0.13712183286797794,
+      "odds_ratio": 0.8718639979698406
+    },
+    {
+      "feature": "Porte Grande",
+      "coef": -0.13322314516975758,
+      "odds_ratio": 0.8752697580969069
+    },
+    {
+      "feature": "Idade da empresa",
+      "coef": 0.1283896795788263,
+      "odds_ratio": 1.1369959804965608
+    },
+    {
+      "feature": "Nº de funcionários (log)",
+      "coef": 0.11678623145211635,
+      "odds_ratio": 1.1238791539950124
+    },
+    {
+      "feature": "Porte ME",
+      "coef": 0.1000780261525767,
+      "odds_ratio": 1.105257153674597
+    },
+    {
+      "feature": "Idade da empresa: dado ausente",
+      "coef": -0.08511483968112492,
+      "odds_ratio": 0.9184068088001155
+    },
+    {
+      "feature": "Nº de funcionários (log): dado ausente",
+      "coef": 0.07212592740552859,
+      "odds_ratio": 1.0747906811442738
+    },
+    {
+      "feature": "CNAE 7020-4/00 · Consultoria em gestão empresarial",
+      "coef": 0.0719245246084821,
+      "odds_ratio": 1.0745742370918023
+    },
+    {
+      "feature": "Possui e-mail",
+      "coef": -0.05967591481928998,
+      "odds_ratio": 0.9420697949759764
+    },
+    {
+      "feature": "Possui telefone",
+      "coef": -0.04951819910985579,
+      "odds_ratio": 0.9516878381073439
+    },
+    {
+      "feature": "Nº de sócios",
+      "coef": -0.03401734003508872,
+      "odds_ratio": 0.9665547443990125
+    },
+    {
+      "feature": "CNAE desconhecido",
+      "coef": 0.022215431639171515,
+      "odds_ratio": 1.0224640318478346
+    },
+    {
+      "feature": "Regime desconhecido",
+      "coef": 0.020758054188386586,
+      "odds_ratio": 1.0209750011270309
+    },
+    {
+      "feature": "Está no Nordeste: dado ausente",
+      "coef": 0.013119447134922217,
+      "odds_ratio": 1.0132058846720902
+    },
+    {
+      "feature": "Capital social (log)",
+      "coef": 0.011452979684326355,
+      "odds_ratio": 1.011518816157347
+    },
+    {
+      "feature": "Regime Simples",
+      "coef": -0.008468031936687567,
+      "odds_ratio": 0.9915677208559811
+    }
+  ],
+  "permutation_importance": [
+    {
+      "feature": "CNAE",
+      "auc_drop": 0.10783725696006395,
+      "std": 0.01686239438330113
+    },
+    {
+      "feature": "Porte",
+      "auc_drop": 0.0794993180958093,
+      "std": 0.013362116428522213
+    },
+    {
+      "feature": "Está no Nordeste",
+      "auc_drop": 0.04024502138537226,
+      "std": 0.007369042281148677
+    },
+    {
+      "feature": "Possui site",
+      "auc_drop": 0.017723796671165096,
+      "std": 0.005705848922439137
+    },
+    {
+      "feature": "Regime",
+      "auc_drop": 0.007136609329591792,
+      "std": 0.0018729144618287925
+    },
+    {
+      "feature": "Nº de funcionários (log)",
+      "auc_drop": 0.0049821848067462,
+      "std": 0.003199626267113103
+    },
+    {
+      "feature": "Idade da empresa",
+      "auc_drop": 0.0037836757135002526,
+      "std": 0.004080729186016175
+    },
+    {
+      "feature": "Capital social (log)",
+      "auc_drop": 0.0017577776349706178,
+      "std": 0.0025716177214633136
+    },
+    {
+      "feature": "Possui e-mail",
+      "auc_drop": 0.001595870016922644,
+      "std": 0.0010350816516533318
+    },
+    {
+      "feature": "Possui telefone",
+      "auc_drop": 0.000790794650443738,
+      "std": 0.0014309295727806678
+    },
+    {
+      "feature": "Nº de sócios",
+      "auc_drop": 3.3202664781580477e-05,
+      "std": 0.00013389170895714274
+    }
+  ]
+}
